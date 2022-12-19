@@ -163,6 +163,9 @@ height: 320px;
     height: 204px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+    margin-top: 20px;
 
 }
 .tipe .img{
