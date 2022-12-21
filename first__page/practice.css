@@ -10,7 +10,7 @@
      font-family: 'Heebo';
      color: rgba(33, 36, 61, 1);
 }
-
+/* шапка */
 .header ul{
     list-style: none;
     float: right;
@@ -31,12 +31,19 @@
     color:black;
     text-decoration: none;
     font-size: 20px;
+    transition: color .3s;
 }
+.header a:hover,
+.header a.active{
+    color:#FF6464;
+}
+/* шапка конец */
 .wrapper{
     margin: 0 auto;
     width: 856px;
     overflow: hidden;
 }
+/* начало страницы */
 .start_info{
     font-size:44px;
     font-weight: 800;
@@ -75,6 +82,11 @@
     color: white;
     display: inline-block;
     text-decoration: none;
+    transition: background-color .3s;
+}
+.button:hover{
+    background: #fd3d3d;
+
 }
 
 .author .avatar img{
@@ -84,28 +96,42 @@
     margin-top:29px ;
     margin-bottom: 32px;
 }
+/* начало страницы конец */
+
 .page{
     display: flex;
     flex-direction: column;
     align-items: center; 
     /* ////////////////////////////////////// */
 }
+/* посты */
 .posts{
 width: 1152px;
 height: 320px;
+
 }
 .posts__header{
     display: flex;
     justify-content: space-between;
 }
+.view__all{
+    color:aqua;
+    transition: color .3s;
 
+    
+}
+.view__all:hover{
+    color: rgb(1, 255, 192);
+}
 
 .card{
     width: 418px;
     height: 295px;
+    /* display: block; */
     display: flex;
     flex-direction: column;
     align-items:center;
+    text-decoration: none;
 
 }
 .cards{
@@ -147,13 +173,14 @@ height: 320px;
     margin-bottom: 9px;
 
 }
+
 .data{
     display: inline;
 }
+/* посты конец */
+/* избранные работы */
 .tipes{
     height: 770px;
-
-    
 }
 
 .first__word-tipe{
@@ -168,6 +195,9 @@ height: 320px;
     margin-top: 20px;
 
 }
+.tipe_big{
+    
+}
 .tipe .img{
  /* align-items: center; */
  margin: center;
@@ -175,10 +205,11 @@ height: 320px;
 
 .tipe__word{
     font-family: 'Heebo';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 44px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    text-decoration: none;
 }
 .tipe .tipe__text{
     display: flex;
@@ -212,6 +243,11 @@ line-height: 44px;
 }
 .thing{
     color: #8695A4;
+    text-decoration: none;
+    transition: color .3s;
+}
+.thing:hover{
+    color: #757d85;
 }
 .text{
     display: block;
@@ -220,6 +256,9 @@ line-height: 44px;
 .tipe:last-child{
     margin-bottom: 84px;
 }
+/* избранные работы конец */
+
+/* подвал */
 .contacts{
     height: 182px;
     display: flex;
@@ -241,4 +280,7 @@ line-height: 44px;
 .last__date{
     margin-top: 26px;
     margin-bottom: 54px;
+    width: 500px;
+    text-align: center;
 }
+/* подвал конец */
