@@ -47,6 +47,9 @@ margin-bottom: 106px;
     width: 856px;
     overflow: hidden;
 }
+.wrapper-other{
+    width: 682px;
+}
 /* начало страницы */
 .start_info{
     font-size:44px;
@@ -235,16 +238,21 @@ height: 320px;
     line-height: 44px;
     text-decoration: none;
 }
+
 .tipe .tipe__text{
     display: flex;
     flex-direction: column;
 
 }
 .tipe__text{
-    margin-left: 20px;
+     margin-left: 20px;
+
+}
+.tipe__text-other{
+    margin-bottom: 26px;
 }
 .year__block{
-    width: 62px;
+    width: 60px;
     height: 25px;
     background: #142850;
     border-radius: 16px;
@@ -255,9 +263,14 @@ height: 320px;
     flex-direction: column;
     align-items: center;
 }
+.year__block-other{
+    background-color: rgba(255, 100, 100, 1);
+}
+
+
 .date__tipe{
     height: 44px;
-    width: 300px;
+    width: auto;
     display: flex;
     margin-top:20px ;
     
@@ -312,3 +325,29 @@ height: 320px;
     text-align: center;
 }
 /* подвал конец */
+.image__border{
+    width: 681px;
+    height: 460px;
+}
+.about__work{
+    margin-top: 54px;
+    margin-bottom: 30px;
+}
+.first__woard-detal{
+    font-family: 'Heebo';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 60px;
+}
+.first__woard-detal-mini{
+    font-size: 24px;
+}
+.image__border{
+    margin: 28px 0px;
+}
+.info__detal{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
