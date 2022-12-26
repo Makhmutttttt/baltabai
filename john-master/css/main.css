@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo';
+    color: #21243D;
+    font-size: 16px;
+}
+
+/*
+  Обертка
+*/
+.wrapper {
+    margin: 0 auto;
+    width: 856px;
+}
+
+/*
+  Сброс плавающих элементов
+*/
+.clearfix {
+    clear: both;
+}
+
+/*
+  Шапка
+*/
+.header {
+    overflow: hidden;
+}
+
+.header ul {
+    list-style: none;
+    float: right;
+    margin: 27px 60px 27px 0;
+}
+
+.header li {
+    float: left;
+    margin-left: 32px;
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.header a:hover,
+.header a.active
+ {
+    color: #FF6464;
+}
+
+/* Блок автор */
+.author {
+    margin-top: 128px;
+    margin-bottom: 72px;
+}
+
+.author .wrapper {
+    overflow: hidden;
+}
+
+.author__info {
+    float: left;
+    width: calc(100% - 243px);
+    padding-right: 115px;
+}
+
+.author__avatar {
+    float: right;
+    width: 243px;
+}
+
+.author__avatar img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -6px 6px 0px #EDF7FA;
+}
+
+.author__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 136%;
+    margin-bottom: 40px;
+}
+
+.author__text {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/*
+  Кнопка
+*/
+.button {
+    color: #fff;
+    background-color: #FF6464;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.button:hover {
+    background-color: #ee5959;
+}
+
+/*
+  Посты
+*/
+.posts {
+    background-color: #EDF7FA;
+    margin-top: 72px;
+    margin-bottom: 28px;
+}
+
+.posts__header {
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.posts__title {
+    float: left;
+    font-size: 22px;
+}
+
+.posts__header a {
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    color: #00A8CC;
+    transition: color .3s;
+}
+
+.posts__header a:hover {
+    color: #0090b1;
+}
+
+.posts .wrapper {
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+
+.posts__cards {
+    overflow: hidden;
+}
+
+.posts__card {
+    width: calc(50% - 10px);
+    float: left;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px;
+    display: block;
+}
+
+a.posts__card {
+    text-decoration: none;
+    color: #21243D;
+}
+
+.posts__card:last-child {
+    margin-right: 0;
+}
+
+.posts__card-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.posts__date,
+.posts__tags {
+    float: left;
+    font-size: 18px;
+}
+
+.posts__date {
+    border-right: 1px solid #000;
+    padding-right: 32px;
+}
+
+.posts__tags {
+    margin-left: 32px;
+}
+
+.posts__card-info {
+    margin-top: 24px;
+}
+
+.posts__card-text {
+    margin-top: 20px;
+}
+
+/*
+  Избранные работы
+*/
+.featured {
+    margin-top: 28px;
+    margin-bottom: 84px;
+}
+
+.featured__title {
+    font-size: 22px;
+    margin-bottom: 36px;
+}
+
+.featured__title_big {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.featured__card {
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 36px;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.featured__image {
+    width: 246px;
+    display: block;
+}
+
+.featured__image img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.featured__image, .featured__info {
+    float: left;
+}
+
+.featured__info {
+    width: calc(100% - 246px);
+    padding-left: 20px;
+}
+
+.featured__info-title {
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #21243D;
+    transition: color .3s;
+}
+
+.featured__info-title:hover {
+    color: #353a62;
+}
+
+.featured__year, .featured__tag {
+    float: left;
+}
+
+.featured__year {
+    background-color: #142850;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0 12px;
+}
+
+.featured__tag {
+    margin-left: 24px;
+    font-size: 20px;
+    color: #8695A4;
+    display: block;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.featured__tag:hover {
+    color: #6b7885;
+}
+
+.featured__detail, .featured__text {
+    margin-top: 20px;
+}
+
+/*
+  Подвал
+*/
+.footer {
+    margin-top: 84px;
+    padding: 52px 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.footer__socials {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 312px;
+    margin-bottom: 28px;
+}
+
+.footer__icon {
+    float: left;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin-right: 28px;
+    display: block;
+    transition: transform .3s;
+}
+
+.footer__icon:hover {
+    transform: scale(1.2);
+}
+
+.footer__icon:last-child {
+    margin-right: 0;
+}
+
+.footer__icon img {
+    max-width: 37px;
+}

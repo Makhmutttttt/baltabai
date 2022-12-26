@@ -1,0 +1,57 @@
+/* шапка */
+.header__burger{
+    display: none;
+    border: none;
+    float: right;
+    margin: 20px 20px 0px 0px;
+    background-color: transparent;
+}
+
+@media(max-width: 576px){
+
+    .header__burger{
+        display: block;
+    }
+
+    .header{
+        display: none;
+    }
+
+}
+@media(max-width:576){
+    .footer__copyright{
+
+    }
+}
+@media (max-width:886px){
+
+}
+.wrapper {
+    margin:0 auto;
+    width: 856px;
+    max-width: 856px;
+}
+@media(max-width:576px){
+    .wrapper{
+        width:calc(100% - 30px);
+    }
+}
+
+@media(max-width:886px){
+    .author__info{
+        padding-right: 40px;
+    }
+    .author__title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .author__text{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:776px){
+    .author{
+        margin-top: 30px;
+    }
+}
