@@ -1,0 +1,97 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+    $color_need:#222222;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin_up_down{
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    color: $color_need;
+    .wrapper{
+        width: 1110px;
+        margin: 0 auto;
+        display: flex;   
+        align-items: center;  
+        justify-content: space-between;   
+    }
+    &__section{
+
+        display: flex;
+        &-logo{
+            &_margin__right{
+                margin-right: 30px;
+            }
+            width: 40px;
+        }
+        &-logo-text{
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+    &__nav-and-contacts{
+            display: flex;
+            flex-direction: column;
+            width: 670px;
+        
+
+            &__contacts {
+                margin-bottom: 22px;
+                ul {
+                &_margin__right{
+                    margin-right: 15px;
+                }
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between
+                }
+            }
+                &__nav{
+                    ul{
+                        list-style: none;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between
+                    }
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $color_need;
+                            list-style: none;
+                        }
+                    }
+
+                }    
+            }
+        }
+        
+
+    
+        // display: flex;
+        // &__nav{
+        //     ul{
+        //         display: flex;
+        //         list-style: none;
+        //         text-decoration: none;
+        //         list-style: none;
+        //     }
+        //     li {
+
+        //         a{    
+
+        //             color: $color_need;
+        //         }
+        //     }
+        // }
+
+
