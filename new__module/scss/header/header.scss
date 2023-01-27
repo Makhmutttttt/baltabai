@@ -8,7 +8,6 @@
     }
 
     &__nav{
-        width: 540px;
         display: flex;
         justify-content: space-between;
         ul{
@@ -17,11 +16,13 @@
             flex-direction: row;
             justify-content:space-between;
             align-items: center;
+            column-gap: 30px;
         }
 
         li{
             list-style: none;
             text-decoration: none;
+            flex-shrink: 0;
         }
     }
     .wrapper{
@@ -39,9 +40,8 @@
             flex-direction: column;
             align-items: center;
         }
-        &__nav{
-            width: 446px;
-        }
+        // &__nav{
+        // }
     }
 
 

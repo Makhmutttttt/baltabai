@@ -5,20 +5,20 @@
   box-sizing: border-box;
 }
 
-.margin_up_down {
-  margin-top: 22px;
-  margin-bottom: 32px;
-}
-
 .header {
+  padding: 30px;
   display: flex;
   align-items: center;
   color: #222222;
+}
+.header .img-container {
+  height: 17px;
 }
 .header .wrapper {
   width: 1110px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   align-items: center;
   justify-content: space-between;
 }
@@ -39,20 +39,21 @@
 .header__nav-and-contacts {
   display: flex;
   flex-direction: column;
-  width: 670px;
+  row-gap: 22px;
 }
-.header__nav-and-contacts__contacts {
-  margin-bottom: 22px;
+.header__nav-and-contacts__contacts__contact {
+  display: flex;
+  column-gap: 16px;
+  flex-shrink: 0;
 }
 .header__nav-and-contacts__contacts ul {
+  column-gap: 16px;
   list-style: none;
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.header__nav-and-contacts__contacts ul_margin__right {
-  margin-right: 15px;
+  flex-wrap: wrap;
+  row-gap: 22px;
 }
 .header__nav-and-contacts__nav ul {
   list-style: none;
@@ -60,11 +61,57 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 22px;
+  row-gap: 22px;
+}
+.header__nav-and-contacts__nav li img {
+  height: 100%;
 }
 .header__nav-and-contacts__nav li a {
   text-decoration: none;
   color: #222222;
   list-style: none;
+}
+
+@media (max-width: 955px) {
+  .header .wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 696px) {
+  .header__nav-and-contacts__contacts ul {
+    justify-content: center;
+  }
+  .header__nav-and-contacts__nav ul {
+    justify-content: center;
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+.footer .wrapper {
+  width: 1110px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__first__word {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+}
+.footer__rigestration {
+  background-image: url("../img/Rectangle.png");
+  width: 100%;
+}
+.footer__rigestration__contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

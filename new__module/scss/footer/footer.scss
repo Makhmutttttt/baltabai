@@ -12,13 +12,14 @@
         max-width: 1100px;
         margin:0 auto;
     }
-    &__info{
-        text-align: center;
-    }
+
     @media(max-width:480px){
         .wrapper{        
             flex-direction: column-reverse;
             align-items: center;
+        }
+        &__info{
+            text-align: center;
         }
     }
 
