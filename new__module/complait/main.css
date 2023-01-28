@@ -21,18 +21,6 @@ body {
   min-height: 100%;
 }
 
-main {
-  flex: 1 0 auto;
-}
-main .wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .footer {
   flex: 0 0 auto;
   background-color: #34547A;
@@ -60,6 +48,7 @@ main .wrapper {
 .header {
   flex: 0 0 auto;
   padding: 80px 15px;
+  background-color: #EEEFF1;
 }
 .header__logo {
   width: 84px;
@@ -103,6 +92,60 @@ main .wrapper {
     flex-direction: column;
     row-gap: 10px;
   }
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: 100%;
+  background-color: #EEEFF1;
+}
+main .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+main .wrapper .first {
+  display: flex;
+  padding-top: 150px;
+}
+main .wrapper .first__image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .wrapper .first__image .img__container {
+  max-width: 360px;
+}
+main .wrapper .first__image .img__container img {
+  width: 100%;
+}
+main .wrapper .first__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  width: 50%;
+  padding-left: 15px;
+}
+main .wrapper .first__description h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: rgb(0, 0, 0);
+}
+main .wrapper .first__description .button {
+  align-self: flex-start;
+  background-color: rgb(52, 84, 122);
+  color: rgb(255, 255, 255);
+  padding: 21px 41px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .wrapper .first__description .button :hover {
+  background-color: rgb(3, 24, 48);
 }
 
 /*# sourceMappingURL=main.css.map */
