@@ -1,0 +1,57 @@
+
+main{
+    flex: 1 0 auto;
+    min-height: 100%;
+    background-color: $backgrond-color;
+    .wrapper{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+
+       
+
+        .first{
+            display: flex;
+            padding-top: 150px;
+            
+            &__image{
+                width:50%;
+                @include block__center;
+                .img__container{
+                    img{
+                        width:100%;
+                    }
+                    max-width:360px;
+                }
+            }
+            &__description{
+                display: flex;
+                flex-direction: column;
+                row-gap: 60px;
+
+                width:50%;
+                padding-left:15px;
+                h1{
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 79px;
+                    color:$color-black;
+                }
+                .button{
+                    align-self: flex-start;///////от растягивании
+                    background-color: 
+                    rgba(52, 84, 122, 1);
+                    color: $white-color;
+                    padding: 21px 41px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    :hover{
+                        background-color:  rgb(3, 24, 48);
+                    }
+                }
+            }   
+        }
+    }
+}

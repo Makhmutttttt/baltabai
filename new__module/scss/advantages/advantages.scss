@@ -1,0 +1,30 @@
+.advantages{
+    background-color: $color-advantages;
+    width: 100%;
+    padding: 100px 0px;
+    .wrapper{
+        .icons{
+            display: flex;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            .icon{
+                height: 50px;
+                display: flex;
+                column-gap: 20px;
+                &__img{
+                    width: 50px;
+    
+                }
+                &__text{
+                    color: $white-color;
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+            }
+        
+        }
+    }
+}
