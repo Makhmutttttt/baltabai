@@ -1,0 +1,53 @@
+.first__page{
+    flex: 1 0 auto;
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 120px 0px 100px 0px;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        row-gap: 90px;
+        justify-content: flex-start;
+        .first__word{
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 66px;
+            color: white;
+            
+        }
+        .container__first__word{
+            width:590px;
+            display: flex;
+            flex-direction: row;
+        }
+        .next__point{
+            display: flex;
+            column-gap: 40px;
+            .point{
+                border-radius: 50px;
+                border: 5px solid white;
+                background-color: white;
+            }
+
+            .next__button{
+                width: 60px;
+                height: 60px;
+                align-self: flex-end;
+                row-gap: 0px;
+                &__image{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}
