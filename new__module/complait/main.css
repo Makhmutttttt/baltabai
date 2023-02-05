@@ -27,6 +27,23 @@ body {
   min-height: 100%;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.gallery .gallery__item {
+  width: 100%;
+}
+.gallery__item {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
+.gallery__item img {
+  width: 1px;
+  opacity: 0;
+}
+
 .footer {
   flex: 0 0 auto;
   background-color: #34547A;
