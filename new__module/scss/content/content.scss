@@ -20,9 +20,11 @@ main{
                 width:50%;
                 @include block__center;
                 .img__container{
+
                     img{
                         width:100%;
                     }
+                    
                     max-width:360px;
                 }
             }
