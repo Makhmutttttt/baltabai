@@ -10,7 +10,6 @@
     .wrapper{
         display: flex;
         flex-direction: column;
-        display: flex;
         align-items: flex-start;
         row-gap: 90px;
         justify-content: flex-start;
@@ -23,6 +22,30 @@
             color: white;
             
         }
+        .move__slide{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            .next__buttons{
+                display: flex;
+
+                .next__button{
+                    width: 60px;
+                    height: 60px;
+                    row-gap: 0px;
+                    &__image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+    
+                }
+                
+            }
+
+        }
         .container__first__word{
             width:590px;
             display: flex;
@@ -31,21 +54,17 @@
         .next__point{
             display: flex;
             column-gap: 40px;
+            align-items: end;
             .point{
                 border-radius: 50px;
                 border: 5px solid white;
                 background-color: white;
+                flex-shrink: 1;
+                width: 5px;
+                 height: 5px;
             }
 
-            .next__button{
-                width: 60px;
-                height: 60px;
-                align-self: flex-end;
-                row-gap: 0px;
-                &__image{
-                    width: 100%;
-                }
-            }
+
         }
 
     }
