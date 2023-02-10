@@ -208,17 +208,27 @@ html {
 }
 .first__page .wrapper .move__slide .next__buttons {
   display: flex;
+  height: 60px;
 }
 .first__page .wrapper .move__slide .next__buttons .next__button {
   width: 60px;
   height: 60px;
   row-gap: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.first__page .wrapper .move__slide .next__buttons .next__button__image {
-  width: 100%;
+.first__page .wrapper .move__slide .next__buttons .next__button:hover {
+  background-color: rgba(43, 42, 42, 0.8);
 }
-.first__page .wrapper .move__slide .next__buttons .next__button__image img {
-  width: 100%;
+.first__page .wrapper .move__slide .next__buttons .button__right {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.first__page .wrapper .move__slide .next__buttons .button__left {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .first__page .wrapper .container__first__word {
   width: 590px;

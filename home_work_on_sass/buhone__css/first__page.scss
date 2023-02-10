@@ -29,18 +29,31 @@
             width: 100%;
             .next__buttons{
                 display: flex;
+                height: 60px;
 
                 .next__button{
                     width: 60px;
                     height: 60px;
                     row-gap: 0px;
-                    &__image{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                        }
-                    }
-    
+                    @include block__center;
+                    border: none;
+                    cursor: pointer;
+                    transition: 0.4s;
+                 
+
+
+                }
+                .next__button:hover{
+                    background-color:rgba(43, 42, 42, 0.8); ;
+                }
+
+                .button__right{
+                    background-color: rgba(255, 255, 255, 0.2);
+                
+                }
+                .button__left{
+                    background-color: rgba(255, 255, 255, 0.5);
+               
                 }
                 
             }
