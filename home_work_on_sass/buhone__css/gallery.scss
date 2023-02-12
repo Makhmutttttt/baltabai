@@ -29,16 +29,24 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns:repeat(3,minmax(360px, 1fr));
+            // grid-template-columns:repeat(3,minmax(300px, 1fr));
+            grid-template-columns: repeat(3, minmax(300px, 320px));
             grid-auto-flow: row dense;
             justify-items: stretch;
             align-items: stretch;
             gap: 40px;
             // width: 1200px;
             padding: 110px 0px 140px 0px;
-            background-image: url(../img/service__grid.png);
+            // background-image: url(../img/service__grid.png);
             
-            
+            .item{
+                aspect-ratio: 1/1;
+                position: relative;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
 
         }       
     }
