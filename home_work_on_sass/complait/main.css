@@ -308,7 +308,7 @@ html {
   row-gap: 50px;
 }
 .container__works .wrapper {
-  align-items: baseline;
+  align-items: stretch;
 }
 .container__works .wrapper .mini__transperent {
   font-family: "Lato";
@@ -328,7 +328,7 @@ html {
 }
 .container__works .wrapper .gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 320px));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-flow: row dense;
   justify-items: stretch;
   align-items: stretch;

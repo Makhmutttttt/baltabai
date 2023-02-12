@@ -6,7 +6,7 @@
     justify-content: center;
     row-gap: 50px;
     .wrapper{
-        align-items:baseline;
+        align-items:stretch;
         .mini__transperent{
             font-family: 'Lato';
             font-style: normal;
@@ -30,7 +30,7 @@
         .gallery {
             display: grid;
             // grid-template-columns:repeat(3,minmax(300px, 1fr));
-            grid-template-columns: repeat(3, minmax(300px, 320px));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             grid-auto-flow: row dense;
             justify-items: stretch;
             align-items: stretch;
