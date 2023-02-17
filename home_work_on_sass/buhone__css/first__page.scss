@@ -1,17 +1,17 @@
 .first__page{
-    flex: 1 0 auto;
+   
     background-image: url(../img/Rectangle.png);
     background-repeat: no-repeat;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 120px 0px 100px 0px;
+    padding: 110px 0px 110px 0px;
 
     .wrapper{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        row-gap: 90px;
+        row-gap: 70px;
         justify-content: flex-start;
         .first__word{
             font-family: 'Merriweather';
@@ -22,6 +22,14 @@
             color: white;
             
         }
+        .container__button{
+            width: 100%;
+            .botton{
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+            
         .move__slide{
             display: flex;
             flex-direction: row;
@@ -80,6 +88,52 @@
 
         }
 
+   
+
     }
 
+}
+@media(max-width:670px){
+    .first__page{
+        padding: 60px 0px 60px 0px;
+        .wrapper{
+            .container__first__word{
+                width: auto;
+                .first__word{
+                    font-size: 32px;
+                    text-align: center;
+                }
+            }
+            .container__button{
+                display: flex;
+                justify-content: center;
+
+            }
+        }
+
+
+    }
+}
+@media(max-width:470px){
+    .first__page{
+        .wrapper{
+            row-gap: 30px;
+            .container__first__word{
+            
+                .first__word{
+                    font-size: 24px;
+                }
+            }
+            .container__button{
+
+            }
+            .move__slide{
+                flex-direction: column;
+                align-items: center;
+                row-gap: 30px;
+            }
+        }
+
+
+    }
 }

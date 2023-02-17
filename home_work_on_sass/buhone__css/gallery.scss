@@ -5,38 +5,50 @@
     grid-template-columns: auto;
     justify-content: center;
     row-gap: 50px;
-    
-    .mini__transperent{
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 33px;
-        color: 
-        rgba(189, 189, 189, 1);
-    }
+    .wrapper{
+        align-items:stretch;
+        .mini__transperent{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 33px;
+            color: 
+            rgba(189, 189, 189, 1);
+        }
 
-    .first__word{
-        font-family: 'Merriweather';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 66px;
-        color: 
-        rgba(51, 51, 51, 1)
-        
-    }
-    .gallery {
-        display: grid;
-        grid-template-columns:repeat(auto-fit,minmax(360px, 1fr));
-        grid-auto-flow: row dense;
-        justify-items: stretch;
-        align-items: stretch;
-        gap: 40px;
-        width: 1200px;
-        padding: 110px 0px 140px 0px;
-        
-        
+        .first__word{
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 66px;
+            color: 
+            rgba(51, 51, 51, 1)
+            
+        }
+        .gallery {
+            display: grid;
+            // grid-template-columns:repeat(3,minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-flow: row dense;
+            justify-items: stretch;
+            align-items: stretch;
+            gap: 40px;
+            // width: 1200px;
+            padding: 110px 0px 140px 0px;
+            // background-image: url(../img/service__grid.png);
+            
+            .item{
+                aspect-ratio: 1/1;
+                position: relative;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }       
     }
 }
 
