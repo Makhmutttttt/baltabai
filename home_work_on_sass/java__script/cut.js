@@ -1,7 +1,7 @@
 let users = ['Isabella', 'Lucas', 'Sophia', 'Noah', 'Ava', 'Ethan', 'Emma', 'Liam', 'Olivia', 'Mason'];
 let names = ['Ethan', 'Lucas', 'Charlotte', 'Logan', 'Mia', 'Emma', 'Amelia', 'Jackson', 'Harper', 'Olivia'];
 let students = ['Ava', 'Mia', 'Jax', 'Zoe'];
-
+function cut__array(){
 let name__array = prompt("Choose an array from {users, names, students}");
 let until = Number(prompt("Enter__number__cut__until__the__array"));
 
@@ -31,3 +31,5 @@ if(isNaN(until) || until < 0 || until > cutted__arr.length) {
     let ansver__arr = cutted__arr.slice(0, until);
     alert(ansver__arr.join(', '));
   }
+}
+cut__array();
