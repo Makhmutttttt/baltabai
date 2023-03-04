@@ -48,15 +48,19 @@ body {
   z-index: 25px;
 }
 
+.popup {
+  z-index: 50;
+}
 .popup__open__panel {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
-  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 0;
+  display: none;
 }
 .popup__icon {
   width: 672px;
@@ -65,13 +69,14 @@ body {
   position: relative;
 }
 .popup__icon__exit {
-  display: flex;
   position: absolute;
   right: 10px;
   top: 10px;
   width: 32px;
   height: 32px;
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 .popup__icon__exit img {
   width: 100%;
