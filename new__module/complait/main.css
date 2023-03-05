@@ -261,4 +261,9 @@ main .wrapper .first__description .button :hover {
   background-color: rgb(3, 24, 48);
 }
 
+.partners .swiper {
+  width: 600px;
+  height: 300px;
+}
+
 /*# sourceMappingURL=main.css.map */
