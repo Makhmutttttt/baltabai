@@ -37,3 +37,11 @@
         }
     }
 }
+@media(max-width:1024px){
+    .popup{
+        &__icon{
+            width: 340px;
+            height: 320px;
+        }
+    }
+}

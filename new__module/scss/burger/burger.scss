@@ -1,0 +1,33 @@
+.header{
+    .wrapper{
+
+        .header__burger{
+            border:none;
+            width: 48px;
+            height: 48px;
+            background-image: url('../../img__bem/Vector.svg');
+            background-size: cover; 
+            display: none;
+            cursor: pointer;
+            &_active{
+                background-image: url(../../img__bem/Vector_exit.svg);
+            }
+
+
+    }
+
+}
+}
+@media(max-width:630px){
+    .header{
+        padding: 32px;
+        .wrapper{
+            flex-direction: row;
+            .header__burger{
+                display: block;
+                background-size: cover;
+            }
+        }
+    }
+
+}

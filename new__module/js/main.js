@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (){
             popup.style.display = "flex";
 
             // где на странице произошел шелчек это все event event
-            // dataset.popup хранит место проишествие события
+            
         
         })
     }
@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function (){
     for (let button of buttonsClose) {
         button.addEventListener("click", function (event) {
             let popup = this.closest(".popup__open__panel");
+            // let popup = event.currentTarget.closest(".popup__open__panel"); may be
             popup.style.display = "none";
         });
     }
@@ -33,31 +34,56 @@ document.addEventListener("DOMContentLoaded", function (){
     }
     
 
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        // direction: 'vertical',
+    new Swiper('.swiper', {
         loop: true,
-        slidePerView: 4,
+        slidesPerView: 4,
         spaceBetween: 34,
+    });
+    // const swiper = new Swiper('.swiper', {
+    //     // Optional parameters
+    //     // direction: 'vertical',
+    //     loop: true,
+    //     slidePerView: 4,
+    //     spaceBetween: 34,
         
       
-        // // If we need pagination
-        // pagination: {
-        //   el: '.swiper-pagination',
-        // },
+    //     // // If we need pagination
+    //     // pagination: {
+    //     //   el: '.swiper-pagination',
+    //     // },
       
-        // // Navigation arrows
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
+    //     // // Navigation arrows
+    //     // navigation: {
+    //     //   nextEl: '.swiper-button-next',
+    //     //   prevEl: '.swiper-button-prev',
+    //     // },
       
-        // // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
-      });
+    //     // // And if we need scrollbar
+    //     // scrollbar: {
+    //     //   el: '.swiper-scrollbar',
+    //     // },
+    //   });
 
 
+////////////////////////////////////////////////////
+
+    // let burgerButton = document.querySelector(".header__burger");
+    // let menu = document.querySelector(".header__nav");
+
+    // burgerButton.addEventListener("click", function () {
+    //     burgerButton.classList.toggle('header__burger_active');
+    //     menu.classList.toggle('header__nav_active');
+    // });
+
+
+    let burgerButton = document.querySelector(".header__burger");
+    let menu = document.querySelector(".header__nav");
+    let menuClone = menu.cloneNode(true);
+    
+    burgerButton.addEventListener("click", function(){
+        burgerButton.classList.toggle('header__burger_active');
+        menu.classList.toggle('header__nav_active');
+
+    });
 
 })
