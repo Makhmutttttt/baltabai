@@ -10,14 +10,14 @@ main{
         flex-direction: column;
         justify-content:space-between;
 
-       
-
         .first{
             display: flex;
             padding-top: 150px;
+
             
             &__image{
                 width:50%;
+                
                 @include block__center;
                 .img__container{
 
@@ -43,8 +43,7 @@ main{
                 }
                 .button{
                     align-self: flex-start;///////от растягивании
-                    background-color: 
-                    rgba(52, 84, 122, 1);
+                    background-color: rgba(52, 84, 122, 1);
                     color: $white-color;
                     padding: 21px 41px;
                     cursor: pointer;
@@ -57,3 +56,30 @@ main{
         }
     }
 }
+@media(max-width:768px) {
+    main{
+
+        .wrapper{
+
+            .first{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-top: 50px;
+                &__image{
+                    width: 100%;
+                }
+                &__description{
+                    width: 100%;
+                    .button{
+  
+                        margin: 0 auto;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+
