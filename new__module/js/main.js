@@ -6,10 +6,7 @@ document.addEventListener("DOMContentLoaded", function (){
         button.addEventListener("click", function(event){
             let popup = document.querySelector(this.dataset.popup);
             popup.style.display = "flex";
-
             // где на странице произошел шелчек это все event event
-            
-        
         })
     }
     let buttonsClose = document.querySelectorAll(".popup__icon__exit");
@@ -32,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function (){
             }
         });
     }
-    
-
     new Swiper('.swiper', {
         loop: true,
         slidesPerView: 4,
@@ -63,17 +58,7 @@ document.addEventListener("DOMContentLoaded", function (){
     //     //   el: '.swiper-scrollbar',
     //     // },
     //   });
-
-
 ////////////////////////////////////////////////////
-
-    // let burgerButton = document.querySelector(".header__burger");
-    // let menu = document.querySelector(".header__nav");
-
-    // burgerButton.addEventListener("click", function () {
-    //     burgerButton.classList.toggle('header__burger_active');
-    //     menu.classList.toggle('header__nav_active');
-    // });
 
 
     let burgerButton = document.querySelector(".header__burger");
