@@ -66,7 +66,7 @@ text-align: center;
     
    
 }
-body{
+.body{
     background-color: black;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
@@ -298,7 +298,7 @@ line-height: 38px;
 .smile img{
     width: 100%;
 }
-.row{
+.roww{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -416,7 +416,7 @@ text-align: center;
 }
 .parameters{
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: roww;
     align-items: center;
      
 }
@@ -559,3 +559,7 @@ line-height: 40px;
 .zapas{
     display: none;
 }
+.container{
+    padding: 30px;
+}
+

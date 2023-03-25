@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (){
     for (let button of buttonsClose) {
         button.addEventListener("click", function (event) {
             let popup = this.closest(".popup__open__panel");
-            // let popup = event.currentTarget.closest(".popup__open__panel"); may be
+            // let popup = event.currentTarget.closest(".popup__open__panel");may be replace
             popup.style.display = "none";
         });
     }
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function (){
     for (let popup of popups) {
         popup.addEventListener("click", function (event) {
             if (event.target == event.currentTarget
-                // || event.target.matches('.popup__close')
-                // || event.target.matches('.popup__close img')
+                || event.target.matches('.popup__close')
+                || event.target.matches('.popup__close img')
             ) {
                 popup.style.display = "none";
             }
