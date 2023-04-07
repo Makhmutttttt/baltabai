@@ -1,8 +1,14 @@
 <?php
-    if(isset($_POST["login"]) && isset($_POST["password"]) && $_POST["login" ] != null){
-        $data = $_POST['login'].'@|@|@'.$POST['password'];
-        if(file_get_contents(''))
+    if (isset($_POST["login"]) && isset($_POST["password"]) && $_POST["login"] != null) {
+        $data = $_POST['login'] . '@|@|@' . $_POST['password'];
+        if (file_get_contents('logins.txt')) {
+            $data = "|||" . $data;
+        }
+        file_put_contents("logins.txt", $data, FILE_APPEND);
     }
+    $text = file_get_contents("logins.txt");
+    $logins = explode("|||", $text);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +43,7 @@
                     <div class="mb-3">
                         <button class="btn btn-primary">Registration</button>
                     </div>
+                    
 
                 </form>
             </div>
