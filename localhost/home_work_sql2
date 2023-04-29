@@ -1,0 +1,108 @@
+-- Получить самый покупаемый товар
+
+
+/*SELECT products.id, products.name,SUM(orders.quantity) AS total_money
+FROM products
+JOIN orders 
+ON products.id = orders.product_id
+GROUP BY product_id
+ORDER BY total_money DESC
+LIMIT 1;*/
+
+-- Получить список магазинов, отсортированных по количеству заказов
+/*SELECT 
+shops.id, shops.name,
+COUNT(orders.id) AS orders_count 
+FROM shops
+LEFT JOIN orders
+
+ON shops.id = orders.shop_id
+GROUP BY shops.id
+ORDER BY orders_count DESC;*/
+
+-- Получить магазин, который заказывает товары реже всего
+
+/*SELECT 
+shops.id, shops.name,
+COUNT(orders.id) AS orders_count 
+FROM shops
+LEFT JOIN orders
+
+ON shops.id = orders.shop_id
+GROUP BY shops.id
+ORDER BY orders_count
+LIMIT 1;*/
+
+
+-- Получить список магазинов, отсортированных по общей сумме заказов товаров
+/*
+SELECT
+shops.name, 
+SUM(orders.quantity * products.price) AS total_amount
+FROM shops
+LEFT JOIN orders 
+ON shops.id = orders.shop_id
+LEFT JOIN products
+ON products.id = orders.product_id
+GROUP BY shops.id
+ORDER BY total_amount DESC;
+*/
+-- Получить список магазинов, которые занимают ТОП-3 по общей сумме заказов товаров
+/*SELECT
+shops.name, 
+SUM(orders.quantity * products.price) AS total_amount
+FROM shops
+LEFT JOIN orders 
+ON shops.id = orders.shop_id
+LEFT JOIN products
+ON products.id = orders.product_id
+GROUP BY shops.id
+ORDER BY total_amount DESC
+LIMIT 3;
+*/
+-- Получить среднюю закупочную цену для каждого магазина
+/*
+SELECT shops.name,
+AVG(orders.quantity * products.price) AS AVG_shops_price
+FROM shops
+LEFT JOIN orders
+ON orders.shop_id = shops.id
+LEFT JOIN products
+ON products.id = orders.product_id
+GROUP BY shops.id
+ ;*/
+ 
+-- Получить список из 5 самых покупаемых шоколадок
+/*
+SELECT 
+products.id,
+products.name,
+SUM(orders.quantity) AS popular_chocolate
+
+FROM products
+
+LEFT JOIN orders
+
+ON products.id = orders.product_id
+WHERE products.type = 'chocolate'
+GROUP BY products.id
+ORDER BY popular_chocolate DESC
+LIMIT 5;
+*/
+/*
+SELECT 
+product_id ,
+products.name,
+SUM(orders.quantity) AS sum_sales
+FROM products
+JOIN orders
+ON products.id = orders.product_id
+HAVING
+AVG(sum_sales) > 
+WHERE products.type = "icecream"
+GROUP BY products.id
+ORDER BY products.id*/
+
+
+
+
